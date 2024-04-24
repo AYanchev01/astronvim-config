@@ -18,6 +18,7 @@ return {
           end,
           desc = "Toggle Explorer Focus",
         }
+        maps.n["<Leader>o"] = false
       end,
     },
   },
