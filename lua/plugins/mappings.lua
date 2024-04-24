@@ -15,6 +15,9 @@ return {
           ["H"] = { "^", desc = "Go to start of line" },
           ["L"] = { "$", desc = "Go to end of line" },
           ["m"] = { "%", desc = "Jump to matching bracket" },
+          ["<Leader>v"] = { "<Cmd>vsplit<CR>", desc = "Vertical Split" },
+          ["<Leader>h"] = { "<Cmd>split<CR>", desc = "Horizontal Split" },
+          ["<Leader>m"] = { "m", desc = "Set mark" },
         },
         v = {
           ["d"] = { '"_d', desc = "Delete without yank" },
