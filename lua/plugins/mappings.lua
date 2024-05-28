@@ -18,6 +18,7 @@ return {
           ["<Leader>v"] = { "<Cmd>vsplit<CR>", desc = "Vertical Split" },
           ["<Leader>h"] = { "<Cmd>split<CR>", desc = "Horizontal Split" },
           ["<Leader>m"] = { "m", desc = "Set mark" },
+          ["/"] = { ":lua require'my_search'.start_search()<CR>", desc = "Search word under cursor" },
         },
         v = {
           ["d"] = { '"_d', desc = "Delete without yank" },
