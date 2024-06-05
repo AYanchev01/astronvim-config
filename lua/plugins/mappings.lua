@@ -19,6 +19,10 @@ return {
           ["<Leader>h"] = { "<Cmd>split<CR>", desc = "Horizontal Split" },
           ["<Leader>m"] = { "m", desc = "Set mark" },
           ["/"] = { ":lua require'my_search'.start_search()<CR>", desc = "Search word under cursor" },
+          [">b"] = false,
+          [">"] = { ">>", desc = "Indent line" },
+          ["<b"] = false,
+          ["<"] = { "<<", desc = "Outdent line" },
         },
         v = {
           ["d"] = { '"_d', desc = "Delete without yank" },
@@ -30,6 +34,8 @@ return {
           ["H"] = { "^", desc = "Go to start of visual line" },
           ["L"] = { "$", desc = "Go to end of visual line" },
           ["m"] = { "%", desc = "Jump to matching bracket" },
+          [">"] = { ">gv", desc = "Indent selected text and reselect" },
+          ["<"] = { "<gv", desc = "Outdent selected text and reselect" },
         },
         o = {
           ["H"] = { "^", desc = "Go to start of line" },

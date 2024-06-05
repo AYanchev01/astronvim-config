@@ -7,4 +7,5 @@ return {
   { "stevearc/resession.nvim", enabled = false },
   { "folke/todo-comments.nvim", enabled = false },
   { "s1n7ax/nvim-window-picker", enabled = false },
+  { "folke/which-key.nvim", enabled = false },
 }

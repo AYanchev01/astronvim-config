@@ -19,5 +19,6 @@ return {
       "python",
       "bash",
     })
+    opts.textobjects.swap.enable = false 
   end,
 }
