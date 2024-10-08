@@ -7,7 +7,7 @@ return {
         "AstroNvim/astrocore",
         opts = function(_, opts)
           local maps = opts.mappings
-          maps.n["<Leader>sm"] = { function() require("telescope.builtin").marks() end, desc = "Find marks" }
+          maps.n["<Leader>ms"] = { function() require("telescope.builtin").marks() end, desc = "Find marks" }
           maps.n["<Leader>fw"] = { function() require("telescope").extensions.live_grep_args.live_grep_args() end, desc = "Find words"}
         end,
       },
